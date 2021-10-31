@@ -1,0 +1,10 @@
+.MovieRow {
+  margin-bottom: 30px;
+}
+.movieRow h2 {
+  margin: 0px 0px 0px 30px;
+}
+.movieRow--listarea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
