@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import MovieList from './components/MovieList'
-import featuredMovies from './components/featuredMovies'
+import FeaturedMovies from './components/featuredMovies'
 import Tmdb from './Tmdb'
 
 export default () => {
@@ -25,6 +25,8 @@ export default () => {
 
   return (
     <div className="page">
+      {featuredMovie && <FeaturedMovies item={featuredMovie} />}
+
       <section className="lists">
         {moviesList.map((item, key) => (
           <MovieList key={item.id} title={item.title} items={item.items} />

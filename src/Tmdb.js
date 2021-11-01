@@ -55,14 +55,14 @@ export default {
         slug: 'romance',
         title: 'Romance',
         items: await basicFetch(
-          `/discover/movie?with_genres=1749&language=pt-BR&api_key=${API_KEY}`
+          `/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`
         )
       },
       {
         slug: 'documentary',
         title: 'Documentário',
         items: await basicFetch(
-          `/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`
+          `/discover/tv?with_genres=99&language=pt-BR&api_key=${API_KEY}`
         )
       }
     ]
@@ -87,5 +87,6 @@ export default {
           break
       }
     }
+    return info
   }
 }
