@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-export default ({ title, items }) => {
+const movieList = ({ title, items }) => {
   return (
     <div className="movieRow">
       <h2>{title}</h2>
@@ -13,6 +13,7 @@ export default ({ title, items }) => {
                 <img
                   key={key}
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
+                  alt = 'poster de filme'
                 />
               </div>
             ))}
@@ -21,3 +22,5 @@ export default ({ title, items }) => {
     </div>
   )
 }
+
+export default movieList
