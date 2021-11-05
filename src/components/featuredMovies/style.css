@@ -46,6 +46,10 @@
   margin-right: 20px;
   transition: background 0.2s;
 }
+.featured--watchbutton:hover,
+.featured--mylistbutton:hover {
+  opacity: 1;
+}
 
 .featured--watchbutton {
   background-color: #fffeff;
@@ -53,6 +57,14 @@
 }
 .featured--watchbutton:hover,
 .featured--mylistbutton:hover {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  opacity: 1;
 }
 
 .featured--mylistbutton {
